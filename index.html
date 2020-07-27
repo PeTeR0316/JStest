@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body id="body">
+   <!-- 팝업창 -->
+        <div id="layer">
+
+            <div id="noticePopup">
+                <h1>[행사안내]</h1>
+                <hr>
+                <h3>
+                    제5회 해운대라꼬빛축제가 12월 1일 점등식을<br>
+                    시작으로 즐거운 빛의 항해를 시작한다.
+                </h3>
+                <p>[일시] 2018.12.01 ~ 2019.01.31</p>
+                <p>[전화번호] 051-749-4472</p>
+                <p>[주소] 부산광역시 해운대구 해운대해변로265번길 6</p>
+                <p>[주최] 해운대구청, 해운대상권활성화재단</p>
+                <p>[이용] 요금무료</p>
+                <button id="close" onclick="closePopuo()">닫기</button>
+            </div>
+
+        </div>
+
+    <div class="wrap">
+
+        <header class="header">
+            <img src="images/해운대빛축제_로고01.png" alt="">
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="">이용안내</a></li>
+                    <li><a href="">이벤트정보</a></li>
+                    <li><a href="">프로그램</a></li>
+                    <li><a href="">고객센터</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <div class="right">
+
+            <main class="main">
+
+                <div class="slideshow">
+                    <img src="images/cDSC07502.jpg" alt="slide-img">
+                    <div class="text">
+                        <h3>해운대와 함께하는</h3>
+                        <h3>별빛 축제</h3>
+                    </div>
+                </div>
+
+                <div class="three">
+
+                    <div class="popup">
+                        <button type="button" id="noticeTab" onclick="multiTab1()">
+                            공지사항
+                        </button>
+                        <button type="button" id="imageTab" onclick="multiTab2()">
+                            갤러리
+                        </button>
+
+                        <div id="content">
+                            <p onclick="popup()"><span>[공지]</span>2019 해운대라꼬 축제.</p>
+                            <p><span>[공지]</span>해운대라꼬 축제 오시는길</p>
+                            <p><span>[공지]</span>2017 해운대라꼬 축제</p>
+                        </div>
+
+                        <div id="imgContent">
+                            <img src="images/gallery01_110x72.jpg" alt="gallery01">
+                            <img src="images/gallery02_110x72.jpg" alt="gallery02">
+                            <img src="images/gallery03_110x72.jpg" alt="gallery03">
+                            <span>천사의 날개</span>
+                            <span>눈꽃송이</span>
+                            <span>썰매</span>
+                        </div>
+
+                    </div>
+
+                    <div class="banner">
+                        <img src="images/banner_01.png" alt="">
+                    </div>
+
+                    <div class="link">
+                        <img src="images/shortcut_01.png" alt="">
+                    </div>
+
+                </div>
+
+            </main>
+
+            <footer class="footer">
+
+                <div class="footerImage">
+                    <img src="images/해운대빛축제_로고02.png" alt="footer-Logo">
+                </div>
+
+                <div class="copyright">
+                    <span><a href="">개인정보처리방침</a></span>
+                    <span>|</span>
+                    <span><a href="">이메일무단수집거부</a></span>
+                    <span>|</span>
+                    <span><a href="">찾아오시는길</a></span>
+                    <br>
+                    <span class="test">Copyright &copy; Busan Metropolitan City. All rights reserved</span>
+                </div>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="script/script.js"></script>
+    <script></script>
+</body>
+
+</html>

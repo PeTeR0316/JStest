@@ -1,0 +1,254 @@
+@charset "UTF-8";
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#layer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+
+div#layer > div#noticePopup {
+    width: 600px;
+    height: 350px;
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 20%);
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+div#layer > div#noticePopup > h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div#layer > div#noticePopup > button {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 300px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #b0dce5;
+}
+
+div.wrap {
+    width: 1000px;
+    height: 670px;
+    display: flex;
+}
+
+div.wrap > header.header {
+    width: 235px;
+    height: 670px;
+    border: 1px solid #027e02;
+}
+
+div.wrap > header.header > img {
+    margin-left: 17px;
+    margin-bottom: 20px;
+}
+
+div.wrap > header.header > nav.nav > ul {
+    list-style: none;
+    text-align: center;
+}
+
+div.wrap > header.header > nav.nav > ul > li {
+    width: 202px;
+    height: 52px;
+    line-height: 52px;
+    background-color: #e7f7f7;
+    border: 1px solid #000;
+}
+
+div.wrap > header.header > nav.nav > ul > li:not(:first-child) {
+    border-top: none;
+}
+
+div.wrap > header.header > nav.nav > ul > li > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+div.wrap > div.right {
+    border: 1px solid #027e02;
+    width: 765px;
+    height: 670px;
+}
+
+div.wrap > div.right > main.main {
+    width: 765px;
+    height: 576px;
+}
+
+div.wrap > div.right > main.main > div.slideshow {
+    position: relative
+}
+
+div.wrap > div.right > main.main > div.slideshow > img {
+    width: 730px;
+    height: 350px;
+    overflow: hidden;
+    margin: 5px 17px;
+}
+
+div.wrap > div.right > main.main > div.slideshow > div.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin: 5px 17px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+div.wrap > div.right > main.main > div.slideshow > div.text > h3 {
+    margin: 16px 17px;
+}
+
+div.wrap > div.right > main.main > div.three {
+    display: flex;
+    height: 210px;
+    margin-left: 12px;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup {
+    width: 352px;
+    padding: 18px 4px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup > button {
+    border: none;
+    background-color: #b0dce5;
+    margin-left: 34px;
+    width: 92px;
+    height: 25px;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup > button:nth-child(2) {
+    position: relative;
+    background-color: #eee;
+    left: -39.5px;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup > div#content {
+    border: 1px solid #b0dce5;
+    height: 142px;
+    padding-top: 17px;
+    padding-left: 12px;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup > div#content > p {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup > div#content > p > span {
+    width: 50px;
+    display: inline-block;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup > div#imgContent {
+    border: 1px solid #b0dce5;
+    width: 342px;
+    height: 142px;
+    padding-top: 17px;
+    padding-left: 5px;
+    position: absolute;
+    top: 43px;
+    display: none;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup > div#imgContent > img {
+    width: 105px;
+    cursor: pointer;
+}
+
+div.wrap > div.right > main.main > div.three > div.popup > div#imgContent > span {
+    display: inline-block;
+    width: 105px;
+    text-align: center;
+}
+
+div.wrap > div.right > main.main > div.three > div.banner {
+    width: 194px;
+    position: relative;
+    left: -5px;
+    border: 1px solid #ccc;
+}
+
+div.wrap > div.right > main.main > div.three > div.banner > img {
+    width: 110px;
+    height: 42px;
+    position: relative;
+    left: 41px;
+    top: 82px;
+}
+
+div.wrap > div.right > main.main > div.three > div.link {
+    width: 194px;
+    position: relative;
+    left: -10px;
+    border: 1px solid #ccc;
+}
+
+div.wrap > div.right > main.main > div.three > div.link > img {
+    width: 110px;
+    height: 83px;
+    position: relative;
+    left: 41px;
+    top: 60px;
+}
+
+div.wrap > div.right > footer.footer {
+    width: 765px;
+    height: 94px;
+    position: relative;
+}
+
+div.wrap > div.right > footer.footer > div.footerImage > img {
+    position: absolute;
+    left: 18px;
+    top: 20px;
+}
+
+
+div.wrap > div.right > footer.footer > div.copyright {
+    position: absolute;
+    left: 270px;
+    top: 0;
+    display: inline-block;
+    line-height: 40px;
+    vertical-align: top;
+    text-align: center;
+}
+
+div.wrap > div.right > footer.footer > div.copyright > span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+div.wrap > div.right > footer.footer > div.copyright > span > a{
+    text-decoration: none;
+    color: #000;
+}
